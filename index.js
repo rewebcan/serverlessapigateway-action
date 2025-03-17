@@ -62,7 +62,7 @@ async function run() {
 
     // Move 'workers' directory to current directory
     console.log(`Moving workers directory to current directory`);
-    fs.rename(`${zipDir}/worker`, './worker', (err) => {
+    fs.rename(`${zipDir}`, './worker', (err) => {
       if (err) {
         return console.error(err);
       }
